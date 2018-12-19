@@ -1,0 +1,41 @@
+{
+  "name": "node-starter",
+  "version": "0.1.0",
+  "description": "NodeJS boilerplate. Includes Jest, ESLint, code watching, pretty-printing just how I like it.",
+  "main": "index.js",
+  "scripts": {
+    "start": "LOG_LEVEL=debug nodemon -w src src/index.js | pino-pretty",
+    "test": "jest && npm run lint",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottog/node-starter.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "node",
+    "jest",
+    "eslint"
+  ],
+  "author": "Scott Gildersleeve",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottog/node-starter/issues"
+  },
+  "homepage": "https://github.com/scottog/node-starter#readme",
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-node": "8.0.0",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "jest": "23.6.0",
+    "nodemon": "1.18.9"
+  },
+  "dependencies": {
+    "pino": "5.10.1",
+    "pino-pretty": "2.5.0"
+  }
+}
